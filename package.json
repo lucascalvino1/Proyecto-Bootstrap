@@ -1,0 +1,19 @@
+{
+  "name": "bootstrap",
+  "version": "1.0.0",
+  "description": "Primer Proyecto Node js",
+  "main": "index.html",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/lucascalvino1/Proyecto-Bootstrap.git"
+  },
+  "author": "Lucas Calviño",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/lucascalvino1/Proyecto-Bootstrap/issues"
+  },
+  "homepage": "https://github.com/lucascalvino1/Proyecto-Bootstrap#readme"
+}
