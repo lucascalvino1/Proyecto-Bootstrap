@@ -8,6 +8,7 @@
     <!-- Bootstrap CSS -->
     <!--<link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css" integrity="sha384-JcKb8q3iqJ61gNV9KGb8thSsNjpSL0n8PARn9HuZOnIxN0hoP+VmmDGMN5t9UJ0Z" crossorigin="anonymous">-->
     <link rel="stylesheet" href="node_modules/bootstrap/dist/css/bootstrap.min.css" >
+    <link rel="stylesheet" href="css/main.css" >
 
 
     <title>Hello, world!</title>
@@ -21,56 +22,99 @@
     </div>
 
     <div class="container">
-        <div class="row">
-            <div class="col-sm">
+        <div class="d-flex">
+            <div class="col-sm-4">
+                <h1> Que tenemos</h1>
                 <p> Hoteles para elegir en toda la provincia de chubut y con toda la gama de geografías y climas. Podrás hospedarte admirando el mar o la Cordillera de los Andes</p>
             </div>
-            <div class="col-sm">
+            <div class="col-sm-4">
+                <h1>Calidad</h1>
                 <p> Tenés para elegir de 2 a 5 estrellas. Puerto Madryn, Esquel, rivera del Rio Chubut, nada que envidiarle a las mejores regiones europeas chances</p>
             </div>
-            <div class="col-sm">
+            <div class="col-sm-4">
+                <h1>Servicios</h1>
                 <p> Ofrecen todos desayuno y estacionamiento. A su vez servicio de excursiones por la península y/o recomendaciones de atracciones</p>
             </div>
         </div>
 
-        <div class="row">
-            <div class="col">
-                <h1 class="display-4">Hotel 1</h1>
-                <p class="lead">This is a simple hero unit, a simple jumbotron-style component for calling extra attention to featured content or information.</p>
-                <hr class="my-4">
-                <p>It uses utility classes for typography and spacing to space content out within the larger container.</p>
+        <div class="d-flex flex-wrap">
+            <div class="card-hotel d-flex flex-column justify-content-between">
+                <div>
+                    <h3 class="display-4">Hotel 1</h3>
+                    <p class="lead">This is a simple hero unit, a simple jumbling extra attention to featured content or information.</p>
+                </div>
                 <p class="lead">
-                    <a class="btn btn-primary btn-lg" href="#" role="button">Learn more</a>
-                </p>
-            </div>
-            <div class="col">
-                <h1 class="display-4">Hotel 2</h1>
-                <p class="lead">This is a simple hero unit, a simple jumbotron-style component for calling extra attention to featured content or information.</p>
-                <hr class="my-4">
-                <p>It uses utility classes for typography and spacing to space content out within the larger container.</p>
-                <p class="lead">
-                    <a class="btn btn-primary btn-lg" href="#" role="button">Learn more</a>
+                    <a class="btn btn-primary btn-lg btn-reserva" href="#" role="button">Reservar</a>
                 </p>
             </div>
 
-            <div class="col">
-                <h1 class="display-4">Hotel 3</h1>
-                <p class="lead">This is a simple hero unit, a simple jumbotron-style component for calling extra attention to featured content or information.</p>
-                <hr class="my-4">
-                <p>It uses utility classes for typography and spacing to space content out within the larger container.</p>
+            <div class="card-hotel d-flex flex-column justify-content-between">
+                <div>
+                    <h3 class="display-4">Hotel 2</h3>
+                    <p class="lead">This is a simple hero unit, a simple jumbfdsssdddddddddddddddotron-style component for calling extra attention to featured content or information.</p>
+                </div>
                 <p class="lead">
-                    <a class="btn btn-primary btn-lg" href="#" role="button">Learn more</a>
+                    <a class="btn btn-primary btn-lg btn-reserva" href="#" role="button">Reservar</a>
+                </p>
+            </div>
+
+            <div class="card-hotel d-flex flex-column justify-content-between">
+                <div>
+                    <h3 class="display-4">Hotel 3</h3>
+                    <p class="lead">This is a simple hero unit, a simple jumbssssssssssssotron-style component for calling extra attention to featured content or information.</p>
+                </div>
+                <p class="lead">
+                    <a class="btn btn-primary btn-lg btn-reserva" href="#" role="button">Reservar</a>
+                </p>
+            </div>
+
+            <div class="card-hotel d-flex flex-column justify-content-between">
+                <div>
+                    <h3 class="display-4">Hotel 4</h3>
+                    <p class="lead">This is a simple hero unit, a simple jumbotron-style component for calling extra attention to featured content or information.</p>
+                </div>
+                <p class="lead">
+                    <a class="btn btn-primary btn-lg btn-reserva" href="#" role="button">Reservar</a>
+                </p>
+            </div>
+
+            <div class="card-hotel d-flex flex-column justify-content-between">
+                <div>
+                    <h3 class="display-4">Hotel 5</h3>
+                    <p class="lead">This is a simple hero unit, information.</p>
+                </div>
+                <p class="lead">
+                    <a class="btn btn-primary btn-lg btn-reserva" href="#" role="button">Reservar</a>
+                </p>
+            </div>
+
+            <div class="card-hotel d-flex flex-column justify-content-between">
+                <div>
+                    <h3 class="display-4">Hotel 6</h3>
+                    <p class="lead">This is a simple hero unit, a simple jumbotron-style component for calling extra attention to featured content or information.</p>
+                </div>
+                <p class="lead">
+                    <a class="btn btn-primary btn-lg btn-reserva" href="#" role="button">Reservar</a>
+                </p>
+            </div>
+
+            <div class="card-hotel d-flex flex-column justify-content-between">
+                <div>
+                    <h3 class="display-4">Hotel 7</h3>
+                    <p class="lead">This is a simple.</p>
+                </div>
+                <p class="lead">
+                    <a class="btn btn-primary btn-lg btn-reserva" href="#" role="button">Reservar</a>
                 </p>
             </div>
 
         </div>
 
-        <div class="row">
+        <!-- <div class="row">
             <div class="col">
                 <h1 class="display-4">Hotel 4</h1>
                 <p class="lead">This is a simple hero unit, a simple jumbotron-style component for calling extra attention to featured content or information.</p>
-                <hr class="my-4">
-                <p>It uses utility classes for typography and spacing to space content out within the larger container.</p>
+                
                 <p class="lead">
                     <a class="btn btn-primary btn-lg" href="#" role="button">Learn more</a>
                 </p>
@@ -78,8 +122,7 @@
             <div class="col">
                 <h1 class="display-4">Hotel 5</h1>
                 <p class="lead">This is a simple hero unit, a simple jumbotron-style component for calling extra attention to featured content or information.</p>
-                <hr class="my-4">
-                <p>It uses utility classes for typography and spacing to space content out within the larger container.</p>
+                
                 <p class="lead">
                     <a class="btn btn-primary btn-lg" href="#" role="button">Learn more</a>
                 </p>
@@ -88,17 +131,46 @@
             <div class="col">
                 <h1 class="display-4">Hotel 6</h1>
                 <p class="lead">This is a simple hero unit, a simple jumbotron-style component for calling extra attention to featured content or information.</p>
-                <hr class="my-4">
-                <p>It uses utility classes for typography and spacing to space content out within the larger container.</p>
+                
                 <p class="lead">
                     <a class="btn btn-primary btn-lg" href="#" role="button">Learn more</a>
                 </p>
             </div>
 
-        </div>
+        </div> -->
 
 
     </div>
+
+    <footer>
+        <div class="row">
+            <div class="col-sm-4 d-flex flex-column">
+                <a href="http://www.facebook.com">Facebook</a>
+                <a href="http://www.twitter.com">Twitter</a>
+                <a href="http://www.instagram.com">Instagram</a>
+                <a href="http://www.google.com">Google+</a>
+            </div>
+
+            <div class="col-sm-4 d-flex flex-column">
+                <address>
+                    <h3>Oficina Central</h3>
+                    <p>Tucuman 834, CABA, Argentina</p>
+                    <p>+549111234567</p>
+                    <p>contacto@hoteles.com</p>
+                </address>
+            </div>
+
+            <div class="col-sm-4 d-flex flex-column align-items-end">
+                <a href="http://www.facebook.com">Nosotros</a>
+                <a href="http://www.twitter.com">Donde estamos</a>
+                <a href="http://www.instagram.com">Términos y condiciones</a>
+                <a href="http://www.google.com">Contacto</a>
+            </div>
+        </div>
+
+
+
+    </footer>
 
     <!-- Optional JavaScript -->
     <!-- jQuery first, then Popper.js, then Bootstrap JS -->
