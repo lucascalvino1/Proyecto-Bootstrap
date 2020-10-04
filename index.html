@@ -11,19 +11,43 @@
     <link rel="stylesheet" href="css/main.css" >
 
 
-    <title>Hello, world!</title>
+    <title>Proyecto con Bootstrap</title>
   </head>
   <body>
-    <h1>Hello, world!</h1>
+    
+    <nav class="navbar navbar-expand-md navbar-dark bg-dark fixed-top">
+        <a class="navbar-brand" href="#">Hoteles</a>
+        <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent">
+            <span class="navbar-toggler-icon"></span>
+        </button>
+        <div class="collapse navbar-collapse" id="navbarSupportedContent">
+            <ul class="navbar-nav mr-auto">
+                <li class="nav-item active"><a class="nav-link" href="#">Home</a></li>
+                <li class="nav-item"><a class="nav-link" href="about.html">Nosotros</a></li>
+                <li class="nav-item"><a class="nav-link" href="#">Precios</a></li>
+                <li class="nav-item"><a class="nav-link" href="#">Términos y Condiciones</a></li>
+                <li class="nav-item"><a class="nav-link" href="#">Contacto</a></li>
+            </ul>
+        </div>
+    </nav>
 
     <div class="jumbotron">
-        <h1 class="display-4">HOTELES</h1>
+        <h1 class="display-4" style="text-align: center">HOTELES</h1>
         
     </div>
 
     <div class="container">
-        <div class="d-flex">
+        <nav aria-label="breadcrumb">
+            <ol class="breadcrumb">
+                <li class="breadcrumb-item active" aria-current="page">Home</li>
+            </ol>
+        </nav>
+
+
+        <div class="row">
             <div class="col-sm-4">
+
+                
                 <h1> Que tenemos</h1>
                 <p> Hoteles para elegir en toda la provincia de chubut y con toda la gama de geografías y climas. Podrás hospedarte admirando el mar o la Cordillera de los Andes</p>
             </div>
