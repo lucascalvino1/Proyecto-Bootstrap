@@ -27,3 +27,7 @@ footer{
 .footer-address-icon{
     padding: 0px 7px 0px 7px;
 }
+
+.tab-content {
+    padding-top: 10px;
+}
