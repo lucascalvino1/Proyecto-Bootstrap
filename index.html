@@ -107,6 +107,7 @@
                     
                     
                     <p class="card-text">El primer hotel de nuestra lista de hoteles. Cerca de Montjuic</p>
+                    <button type="button" class="btn btn-outline-success" data-toggle="modal" data-target="#contacto">Contactar</button>
                 
                 </div>
                 <p class="lead">
@@ -122,6 +123,7 @@
                     
                     
                     <p class="card-text">El segundo hotel de nuestra lista de hoteles. Ubicado en el norte de españa</p>
+                    <button type="button" class="btn btn-outline-success" data-toggle="modal" data-target="#contacto">Contactar</button>
                 
                 </div>
                 <p class="lead">
@@ -136,6 +138,7 @@
                     <h6 class="card-subtitle text-muted">Luxemburgo</h6>
                     
                     <p class="card-text">El tercer hotel de nuestra lista de hoteles. Entre los países bajos y Alemania</p>
+                    <button type="button" class="btn btn-outline-success" data-toggle="modal" data-target="#contacto">Contactar</button>
                 
                 </div>
                 <p class="lead">
@@ -151,6 +154,7 @@
                     
 
                     <p class="card-text">El cuarto hotel de nuestra lista de hoteles. Linda entre Suiza y Austria</p>
+                    <button type="button" class="btn btn-outline-success" data-toggle="modal" data-target="#contacto">Contactar</button>
                 
                 </div>
                 <p class="lead">
@@ -166,6 +170,7 @@
                     
 
                     <p class="card-text">El quinto hotel de nuestra lista de hoteles. A la vera del Tamesis</p>
+                    <button type="button" class="btn btn-outline-success" data-toggle="modal" data-target="#contacto">Contactar</button>
                 
                 </div>
                 <p class="lead">
@@ -176,10 +181,11 @@
             <div class="card card-hotel justify-content-between ml-2 mr-2">
                 <img class="card-img-top" src="./images/hotel-bsas.jpg" alt="hotel img">
                 <div class="card-body">
-                    <h4 class="card-title">Hotel Buenos Aires <span class="badge badge-secondary">NEW</span></h4>
+                    <h4 class="card-title" data-toggle="tooltip" data-placement="top" title="Las primeras reservas cuentan con clases de tango gratis">Hotel Buenos Aires <span class="badge badge-secondary">NEW</span></h4>
                     <h6 class="card-subtitle text-muted">Argentina</h6>
                     
                     <p class="card-text">El sexto hotel de nuestra lista de hoteles. Barrio de Villa Crespo</p>
+                    <button type="button" class="btn btn-outline-success" data-toggle="modal" data-target="#contacto">Contactar</button>
                 
                 </div>
                 <p class="lead">
@@ -195,15 +201,84 @@
                     
 
                     <p class="card-text">El séptimo hotel de nuestra lista de hoteles. Con vista al Päo de azucar</p>
+                    <button type="button" class="btn btn-outline-success" data-toggle="modal" data-target="#contacto">Contactar</button>
                 
                 </div>
                 <p class="lead">
-                    <a class="btn btn-primary btn-lg btn-reserva" href="#" role="button"><span class="oi oi-plus" style="padding-right: 7px"></span>Reservar</a>
+                    <button type="button" class="btn btn-primary btn-lg btn-reserva" data-toggle="popover" data-content="Consultá las promociones vigentes">Reservar</button>
+                
                 </p>
             </div>
 
         </div>
 
+
+
+        <div class="modal fade" id="contacto" tabindex="-1" role="dialog" aria-labelledby="exampleModalLabel" aria-hidden="true">
+            <div class="modal-dialog" role="document">
+              <div class="modal-content">
+                <div class="modal-header">
+                  <h5 class="modal-title">Contacto con el hotel</h5>
+                  <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+                    <span aria-hidden="true">&times;</span>
+                  </button>
+                </div>
+                <div class="modal-body">
+                  <form>
+                      <div class="form-group">
+                          <label for="recipient-name" class="col-form-label">Tu Email:</label>
+                          <input type="email" class="form-control" id="recipient-name">
+                      </div>
+                      <div class="form-group">
+                          <label for="recipient-text" class="col-form-label">Tu mensaje:</label>
+                          <textarea class="form-control" id="recipient-text"></textarea>
+                      </div>
+                  </form>
+                </div>
+                <div class="modal-footer">
+                  <button type="button" class="btn btn-success">Enviar</button>
+                  
+                </div>
+              </div>
+            </div>
+          </div>
+
+          <div class="modal fade" id="newsletter" tabindex="-1" role="dialog" aria-labelledby="exampleModalLabel" aria-hidden="true">
+            <div class="modal-dialog" role="document">
+              <div class="modal-content">
+                <div class="modal-header">
+                  <h5 class="modal-title">Quiero que me envíen más información de ofertas y novedades</h5>
+                  <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+                    <span aria-hidden="true">&times;</span>
+                  </button>
+                </div>
+                <div class="modal-body">
+                  <form>
+                      <div class="form-group">
+                          <label for="recipient-name" class="col-form-label">Tu Email:</label>
+                          <input type="email" class="form-control" id="recipient-name">
+                      </div>
+                      <div class="form-group">
+                        <h5>Estoy interesado en:</h5>
+                        <input type="checkbox" id="hotel_es" name="hotel_es" value="hotel_es">
+                        <label for="hotel_es"> Hoteles</label><br>
+                        <input type="checkbox" id="vuelos" name="vuelos" value="Vuelos">
+                        <label for="vuelos"> Vuelos</label><br>
+                        <input type="checkbox" id="packages" name="package" value="Package">
+                        <label for="package"> Paquetes</label><br>
+                      </div>
+                  </form>
+                </div>
+                <div class="modal-footer">
+                  <button type="button" class="btn btn-success">Enviar</button>
+                  
+                </div>
+              </div>
+            </div>
+          </div>
+        
+        
+        <button type="button" class="btn btn-secondary btn-lg btn-block" data-toggle="modal" data-target="#newsletter">Quiero recibir más información</button>
 
 
     </div>
@@ -245,6 +320,12 @@
     <script src="node_modules/popper.js/dist/popper.min.js"></script>
     <script src="node_modules/bootstrap/dist/js/bootstrap.min.js"></script>
 
+    <script>
+        $(function(){
+            $("[data-toggle='tooltip']").tooltip();
+            $("[data-toggle='popover']").popover();
+        });
+    </script>
     <!--<script src="https://code.jquery.com/jquery-3.5.1.slim.min.js" integrity="sha384-DfXdz2htPH0lsSSs5nCTpuj/zy4C+OGpamoFVy38MVBnE+IbbVYUew+OrCXaRkfj" crossorigin="anonymous"></script>-->
     <!--<script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.1/dist/umd/popper.min.js" integrity="sha384-9/reFTGAW83EW2RDu2S0VKaIzap3H66lZH81PoYlFhbGU+6BZp6G7niu735Sk7lN" crossorigin="anonymous"></script>-->
     <!--<script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js" integrity="sha384-B4gt1jrGC7Jh4AgTPSdUtOBvfO8shuf57BaghqFfPlYxofvL8/KUEfYiJOMMV+rV" crossorigin="anonymous"></script>-->
