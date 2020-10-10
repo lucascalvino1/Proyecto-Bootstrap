@@ -140,18 +140,56 @@
         <div class="tab-pane fade" id="tarjetas" role="tabpanel"
         aria-labelledby="tarjetas-tab">
 
-                <div class="d-flex justify-content-center">
-                        <div class="card" style="width: 18rem;">
-                                <div class="card-header" style="background-color: blue; color:white">
-                                    Tarjetas Aceptadas
-                                </div>
-                            <ul class="list-group list-group-flush">
-                                <li class="list-group-item">Tarjeta Básica</li>
-                                <li class="list-group-item">Tarjeta VIP</li>
-                                <li class="list-group-item">Tarjeta Black</li>
-                            </ul>
+                <div class="accordion" id="accordionTarjetas">
+                    <div class="card">
+                        <div class="card-header" id="headingOne">
+                            <h5 class="mb-0">
+                                <button class="btn btn-link" type="button" data-toggle="collapse" 
+                                data-target="#collapseBasica" aria-expanded="true" aria-controls="collapseBasica">
+                                Tarjeta básica</button>
+                            </h5>
+                        </div>
+                        <div id="collapseBasica" class="collapse" aria-labelledby="headingOne"
+                        data-parent="#accordionTarjetas">
+                            <div class="card-body">Podés reservar hasta en 3 cuotas sin interés
+
+                            </div>
                         </div>
                     </div>
+
+                    <div class="card">
+                        <div class="card-header" id="headingTwo">
+                            <h5 class="mb-0">
+                                <button class="btn btn-link" type="button" data-toggle="collapse" 
+                                data-target="#collapseVIP" aria-expanded="true" aria-controls="collapseVIP">
+                                Tarjeta VIP</button>
+                            </h5>
+                        </div>
+                        <div id="collapseVIP" class="collapse" aria-labelledby="headingTwo"
+                        data-parent="#accordionTarjetas">
+                            <div class="card-body">Podés reservar hasta en 12 cuotas sin interés
+
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="card">
+                        <div class="card-header" id="headingThree">
+                            <h5 class="mb-0">
+                                <button class="btn btn-link" type="button" data-toggle="collapse" 
+                                data-target="#collapseUVIP" aria-expanded="true" aria-controls="collapseUVIP">
+                                Tarjeta ULTRA VIP</button>
+                            </h5>
+                        </div>
+                        <div id="collapseUVIP" class="collapse" aria-labelledby="headingThree"
+                        data-parent="#accordionTarjetas">
+                            <div class="card-body">Podés reservar hasta en 18 cuotas sin interés. Descuentos de hasta 20%
+
+                            </div>
+                        </div>
+                    </div>
+
+
                 </div>
             
         
