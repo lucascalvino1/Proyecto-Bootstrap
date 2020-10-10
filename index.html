@@ -95,7 +95,7 @@
 
             <div id="carouselControls" class="carousel slide" data-ride="carousel">
                 <div class="carousel-inner">
-                    <div class="carousel-item-active">
+                    <div class="carousel-item active">
                         <img class="d-block w-100" src="images/montana.jpg" alt="primer slide">
                     </div>
                     <div class="carousel-item">
@@ -105,15 +105,18 @@
                         <img class="d-block w-100" src="images/rio.jpg" alt="tercer slide">
                     </div>
                 </div>
+            
+                <a class="carousel-control-prev" href="#carouselControls" role="button" data-slide="prev">
+                    <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+                    <span class="sr-only">Anterior</span>
+                </a>
+                <a class="carousel-control-next" href="#carouselControls" role="button" data-slide="next">
+                    <span class="carousel-control-next-icon" aria-hidden="true"></span>
+                    <span class="sr-only">Siguiente</span>
+                </a>
+
             </div>
-            <a class="carousel-control-prev" href="#carouselControls" role="button" data-slide="prev">
-                <span class="carousel-control-prev-icon" aria-hidden="true"></span>
-                <span class="sr-only">Anterior</span>
-            </a>
-            <a class="carousel-control-next" href="#carouselControls" role="button" data-slide="next">
-                <span class="carousel-control-next-icon" aria-hidden="true"></span>
-                <span class="sr-only">Siguiente</span>
-            </a>
+           
 
         <div class="card-columns">
             <div class="card card-hotel flex-column justify-content-between ml-2 mr-2">
@@ -352,6 +355,9 @@
         $(function(){
             $("[data-toggle='tooltip']").tooltip();
             $("[data-toggle='popover']").popover();
+            $('.carousel').carousel({
+                interval: 2000
+            })
         });
     </script>
     <!--<script src="https://code.jquery.com/jquery-3.5.1.slim.min.js" integrity="sha384-DfXdz2htPH0lsSSs5nCTpuj/zy4C+OGpamoFVy38MVBnE+IbbVYUew+OrCXaRkfj" crossorigin="anonymous"></script>-->
