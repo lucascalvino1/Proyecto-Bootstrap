@@ -226,7 +226,7 @@
                     
 
                     <p class="card-text">El séptimo hotel de nuestra lista de hoteles. Con vista al Päo de azucar</p>
-                    <button type="button" class="btn btn-outline-success" data-toggle="modal" data-target="#contacto">Contactar</button>
+                    <button type="button" class="btn btn-outline-success" data-toggle="modal" data-target="#contacto" id="contactoBtn">Contactar</button>
                 
                 </div>
                 <p class="lead">
@@ -357,7 +357,26 @@
             $("[data-toggle='popover']").popover();
             $('.carousel').carousel({
                 interval: 2000
-            })
+            });
+            $('#contacto').on('show.bs.modal', function (e){
+            console.log('el modal se está mostrando');
+                $('#contactoBtn').removeClass('btn-outline-success');
+                $('#contactoBtn').addClass('btn-primary');
+                $('#contactoBtn').prop('disabled', true);
+            });
+
+            $('#contacto').on('shown.bs.modal', function (e){
+            console.log('el modal se mostró');
+
+            });
+            $('#contacto').on('hide.bs.modal', function (e){
+            console.log('el modal está escondido');
+            });
+            $('#contacto').on('hidden.bs.modal', function (e){
+            console.log('el modal se escondió');
+            $('#contactoBtn').prop('disabled', false);
+            });
+            
         });
     </script>
     <!--<script src="https://code.jquery.com/jquery-3.5.1.slim.min.js" integrity="sha384-DfXdz2htPH0lsSSs5nCTpuj/zy4C+OGpamoFVy38MVBnE+IbbVYUew+OrCXaRkfj" crossorigin="anonymous"></script>-->
